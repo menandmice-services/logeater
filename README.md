@@ -18,3 +18,5 @@ Query-Statistics
 ```
 
 Tested with BIND 9.10 and BIND 9.11.
+
+Binary versions of the ```logeater``` tool can be found at http://packages.menandmice.com/logeater/
