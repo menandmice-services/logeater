@@ -125,3 +125,11 @@ Binary download
 ===============
 
 Binary versions of the ```logeater``` tool can be found at http://packages.menandmice.com/logeater/
+
+More Information
+================
+
+The ```logeater``` tools have been discussed in the "BIND 9 logging
+best practices" Webinar by Men & Mice:
+
+https://www.menandmice.com/resources/educational-resources/webinars/bind-9-logging-best-practices/
