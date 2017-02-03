@@ -90,15 +90,38 @@ $ cat resolvers.log | ./logeater-resolvers | head
 10920 : tp1.glb.nist.gov/DS: invalid response
 9693 : media.netd.com.tr/AAAA for client 192.0.2.165#3347: Name netd.com.tr (SOA) not subdomain of zone media.netd.com.tr -- invalid response
 7932 : service.superc.net/AAAA for client 192.0.2.11#3073: Name superc.net (SOA) not subdomain of zone service.superc.net — invalid response
-4597 : brickleonavon.com/NS for client 192.0.2.46#3073: Name . (SOA) not subdomain of zone brickleonavon.com -- invalid response
+04597 : brickleonavon.com/NS for client 192.0.2.46#3073: Name . (SOA) not subdomain of zone brickleonavon.com -- invalid response
 4474 : promo.mobile.de/AAAA for client 2001:db8:1800:88:78f9:ba4:45fe:d438#48296: Name mobile.de (SOA) not subdomain of zone promo.mobile.de -- invalid response
 ```
 
 Compiling from source
 =====================
 
+Install ```git``` (https://git-scm.com/) and the ```go```
+(https://golang.org) programming language. Both are available in the
+repositories of most Linux and BSD distributions.
 
+Download the source
+
+```
+git clone https://github.com/menandmice-services/logeater.git
+```
+
+Compile the source
+
+```
+cd logeater
+go build logeater-queries.go
+go build logeater-resolvers.go
+go build logeater-dnssec.go
+```
+
+BIND 9 versions
+===============
 
 Tested with BIND 9.10 and BIND 9.11.
+
+Binary download
+===============
 
 Binary versions of the ```logeater``` tool can be found at http://packages.menandmice.com/logeater/
